@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: elizaw7
- * Date: 10/4/2017
- * Time: 3:30 PM
- */
 
-namespace FormsAPI\Mediator;
+namespace UWDOEM\REST\Backend\Mediator;
 
 use Propel\Runtime\Map\TableMap;
 use Propel\Runtime\ActiveQuery\Criteria;
