@@ -126,7 +126,7 @@ class PropelMediator implements MediatorInterface
                 $foreignReferenceName = substr($foreignKeyName, 0, -3);
 
                 if (array_key_exists($foreignKeyName, $attributes) === true && $attributes[$foreignKeyName] !== null) {
-                    $attributes[$foreignReferenceName] = "{$this->href}/$foreignResourceType/$foreignKeyValue";
+                    $attributes[$foreignReferenceName] = "{$this->href}/$foreignResourceType/$foreignKeyValue/";
                 } else {
                     $attributes[$foreignReferenceName] = null;
                 }
