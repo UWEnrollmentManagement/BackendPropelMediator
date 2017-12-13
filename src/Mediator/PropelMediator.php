@@ -120,7 +120,7 @@ class PropelMediator implements MediatorInterface
                 $foreignKeyName = $column->getName();
                 $foreignKeyValue = $attributes[$foreignKeyName];
                 $foreignResourceType = array_search(
-                    trim($column->getRelatedTable()->getClassName(), '\\'),
+                    trim($column->getRelation()->getForeignTable()->getClassName(), '\\'),
                     $this->classMap
                 );
                 $foreignReferenceName = substr($foreignKeyName, 0, -3);
