@@ -132,6 +132,11 @@ class PropelMediator implements MediatorInterface
                 }
             } elseif ($column->getType() === 'TIMESTAMP') {
                 $attributes[$column->getName()] = strtotime($attributes[$column->getName()]);
+            } elseif ($column->isLob()) {
+                $stream = $attributes[$column->getName()];
+                rewind($stream);
+                stream_filter_append($stream, 'convert.base64-encode');
+                $attributes[$column->getName()] = stream_get_contents($stream);
             }
         }
 
