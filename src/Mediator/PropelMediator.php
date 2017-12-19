@@ -187,6 +187,15 @@ class PropelMediator implements MediatorInterface
     }
 
     /**
+     * @param $collection
+     * @return integer
+     */
+    public function count($collection)
+    {
+        return $collection->count();
+    }
+
+    /**
      * @param mixed $collection
      * @return mixed
      */
