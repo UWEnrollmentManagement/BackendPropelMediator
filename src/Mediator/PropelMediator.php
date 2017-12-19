@@ -1,13 +1,13 @@
 <?php
 
-namespace UWDOEM\REST\Backend\Mediator;
+namespace UWDOEM\Backend\Mediator;
 
 use Propel\Runtime\Map\TableMap;
 use Propel\Runtime\ActiveQuery\Criteria;
 
 /**
  * Class PropelMediator
- * @package UWDOEM\REST\Backend\Mediator
+ * @package UWDOEM\Backend\Mediator
  *
  * This class implements the MediatorInterface. See that interface for more detailed descriptions of
  * public class methods.
